@@ -15,29 +15,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="D1q-Rq-baL">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="Fwu-XY-Tl5" detailTextLabel="W9g-GN-D8q" style="IBUITableViewCellStyleValue1" id="D1q-Rq-baL">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D1q-Rq-baL" id="cAk-Zl-t8b">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghk-Nw-fda">
-                                            <rect key="frame" x="21" y="7" width="30" height="30"/>
-                                            <state key="normal" title="Title"/>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmC-2H-6dj">
-                                            <rect key="frame" x="316" y="7" width="40" height="30"/>
-                                            <state key="normal" title="Detail"/>
-                                        </button>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fwu-XY-Tl5">
+                                            <rect key="frame" x="15" y="12" width="31.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W9g-GN-D8q">
+                                            <rect key="frame" x="318.5" y="12" width="41.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="Ghk-Nw-fda" firstAttribute="leading" secondItem="cAk-Zl-t8b" secondAttribute="leadingMargin" constant="13" id="5VK-3D-B58"/>
-                                        <constraint firstItem="AmC-2H-6dj" firstAttribute="top" secondItem="cAk-Zl-t8b" secondAttribute="topMargin" constant="-1" id="fQa-3q-yRm"/>
-                                        <constraint firstItem="AmC-2H-6dj" firstAttribute="centerY" secondItem="Ghk-Nw-fda" secondAttribute="centerY" id="faK-gj-Cqj"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="AmC-2H-6dj" secondAttribute="trailing" constant="11" id="lJY-Ep-aRU"/>
-                                        <constraint firstItem="Ghk-Nw-fda" firstAttribute="top" secondItem="cAk-Zl-t8b" secondAttribute="topMargin" constant="-1" id="oHU-xZ-aFB"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>

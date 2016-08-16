@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import <CoreData/CoreData.h>
 
 @interface DetailViewController ()
 
@@ -27,8 +28,40 @@
 
 
 - (IBAction)cancel:(id)sender {
+    NSLog(@"cancel");
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
+    // every object core data stores is inherited from NSManagedObject.
 - (IBAction)save:(id)sender {
+    NSLog(@"save");
+    NSManagedObjectContext *context = [self managedObjectContext];
+    
+    // create a new managed object
+    NSManagedObject *newDevice = [NSEntityDescription insertNewObjectForEntityForName:@"Device" inManagedObjectContext:context];
+    [newDevice setValue: self.nameField.text forKey: @"name"];
+    [newDevice setValue: self.versionField.text forKey: @"version"];
+    [newDevice setValue: self.companyField.text forKey: @"company"];
+    
+    NSError *error = nil;
+    // save the object to persistent store
+    if(![context save:&error]){
+        NSLog(@"Can't save %@ %@", error, [error localizedDescription]);
+    }
+    [self.navigationController popViewControllerAnimated:YES];
 }
+
+// selecting core data when create a new project, xcode will automatically define a managed object context in AppDelegate.
+// this method allows us to retrieve the managed object context from the AppDelegate
+// later we will use the context to save the device data
+- (NSManagedObjectContext *)managedObjectContext {
+    NSManagedObjectContext *context = nil;
+    id delegate = [[UIApplication sharedApplication]delegate];
+    if([delegate performSelector:@selector(managedObjectContext)]) {
+        context = [delegate managedObjectContext];
+    }
+    return context;
+}
+
+
 @end
