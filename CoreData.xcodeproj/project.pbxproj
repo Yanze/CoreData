@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		E0E7CB0E1D613A8000545919 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E7CB0D1D613A8000545919 /* main.m */; };
 		E0E7CB111D613A8000545919 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E7CB101D613A8000545919 /* AppDelegate.m */; };
-		E0E7CB141D613A8000545919 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E7CB131D613A8000545919 /* ViewController.m */; };
 		E0E7CB171D613A8000545919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E7CB151D613A8000545919 /* Main.storyboard */; };
 		E0E7CB1A1D613A8000545919 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E0E7CB181D613A8000545919 /* CoreData.xcdatamodeld */; };
 		E0E7CB1C1D613A8000545919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0E7CB1B1D613A8000545919 /* Assets.xcassets */; };
 		E0E7CB1F1D613A8000545919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E7CB1D1D613A8000545919 /* LaunchScreen.storyboard */; };
+		E0ED3C131D62906A008A0C06 /* DeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0ED3C121D62906A008A0C06 /* DeviceViewController.m */; };
+		E0ED3C161D6290BF008A0C06 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0ED3C151D6290BF008A0C06 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +22,15 @@
 		E0E7CB0D1D613A8000545919 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E0E7CB0F1D613A8000545919 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E0E7CB101D613A8000545919 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E0E7CB121D613A8000545919 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E0E7CB131D613A8000545919 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E0E7CB161D613A8000545919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0E7CB191D613A8000545919 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		E0E7CB1B1D613A8000545919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0E7CB1E1D613A8000545919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0E7CB201D613A8000545919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0ED3C111D62906A008A0C06 /* DeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceViewController.h; sourceTree = "<group>"; };
+		E0ED3C121D62906A008A0C06 /* DeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceViewController.m; sourceTree = "<group>"; };
+		E0ED3C141D6290BF008A0C06 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		E0ED3C151D6290BF008A0C06 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +65,12 @@
 			children = (
 				E0E7CB0F1D613A8000545919 /* AppDelegate.h */,
 				E0E7CB101D613A8000545919 /* AppDelegate.m */,
-				E0E7CB121D613A8000545919 /* ViewController.h */,
-				E0E7CB131D613A8000545919 /* ViewController.m */,
 				E0E7CB151D613A8000545919 /* Main.storyboard */,
+				E0ED3C111D62906A008A0C06 /* DeviceViewController.h */,
+				E0ED3C121D62906A008A0C06 /* DeviceViewController.m */,
 				E0E7CB1B1D613A8000545919 /* Assets.xcassets */,
+				E0ED3C141D6290BF008A0C06 /* DetailViewController.h */,
+				E0ED3C151D6290BF008A0C06 /* DetailViewController.m */,
 				E0E7CB1D1D613A8000545919 /* LaunchScreen.storyboard */,
 				E0E7CB201D613A8000545919 /* Info.plist */,
 				E0E7CB181D613A8000545919 /* CoreData.xcdatamodeld */,
@@ -152,8 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0ED3C161D6290BF008A0C06 /* DetailViewController.m in Sources */,
+				E0ED3C131D62906A008A0C06 /* DeviceViewController.m in Sources */,
 				E0E7CB1A1D613A8000545919 /* CoreData.xcdatamodeld in Sources */,
-				E0E7CB141D613A8000545919 /* ViewController.m in Sources */,
 				E0E7CB111D613A8000545919 /* AppDelegate.m in Sources */,
 				E0E7CB0E1D613A8000545919 /* main.m in Sources */,
 			);
@@ -306,6 +312,7 @@
 				E0E7CB251D613A8000545919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
