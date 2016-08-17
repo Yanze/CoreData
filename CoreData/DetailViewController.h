@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
 @interface DetailViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UITextField *versionField;
 @property (weak, nonatomic) IBOutlet UITextField *companyField;
+
+@property (nonatomic, strong) NSManagedObject *device;
 
 - (IBAction)cancel:(id)sender;
 - (IBAction)save:(id)sender;
